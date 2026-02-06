@@ -14,8 +14,34 @@ To write an 8085 microprocessor program to check whether a given 8-bit number is
 
 
 ## Program:
+```
+LDA 4200H       
+ANI 01H         
+JZ EVEN 
+JMP ODD
+EVEN:
+MVI A, 01H  
+STA 4201H
+HLT       
+ODD: MVI A,02H
+STA 4201H
+HLT
+```
 
 ## Output:
+
+EVEN:
+<img width="1898" height="915" alt="image" src="https://github.com/user-attachments/assets/5904d835-c1fb-44f9-ad2e-96767f442057" />
+
+ODD:
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/164fbf86-2a6f-4895-886a-180da3acdc6c" />
+
+VERIFICATION:
+
+![photo_2026-02-06_09-31-22](https://github.com/user-attachments/assets/2bf31cc0-3f89-44fb-a2ab-349f3865daa1)
+
+
+
 
 
 ## Result:
